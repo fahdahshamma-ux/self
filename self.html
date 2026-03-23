@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقياس هيرمان - بوصلة التفكير</title>
+    <link rel="stylesheet" href="self.css">
+</head>
+<body>
+
+    <div class="quiz-card" id="quiz-container">
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div id="quiz-box">
+            <div class="question-header">
+                <span id="question-num">السؤال 1 من 56</span>
+            </div>
+            <h2 id="question-text">جاري تحميل السؤال...</h2>
+            
+            <div class="options-container">
+                <button class="opt-btn" onclick="handleAnswer('yes')">أوافق / تنطبق عليّ</button>
+                <button class="opt-btn" onclick="handleAnswer('no')">لا أوافق / لا تنطبق عليّ</button>
+            </div>
+        </div>
+
+        <div id="result-box" class="hidden">
+            <h1>نتيجتك النهائية</h1>
+            <div id="result-quad" class="final-quad"></div>
+            <p id="result-text" class="result-desc"></p>
+            <button class="restart-btn" onclick="location.reload()">إعادة الاختبار</button>
+        </div>
+    </div>
+    <script src="self.js"></script>
+</body>
+</html>
